@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Boxes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 0;
+            padding: 20px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+        }
+
+        .box {
+            width: 60px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            font-size: 24px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            border-radius: 0;
+            border: 1px solid black;
+            position: relative;
+            padding: 0;
+        }
+
+        .box span {
+            margin: 4px 0 0 6px;
+            display: block;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"><span>1</span></div>
+        <div class="box"><span>2</span></div>
+        <div class="box"><span>3</span></div>
+        <div class="box"><span>4</span></div>
+        <div class="box"><span>5</span></div>
+        <div class="box"><span>6</span></div>
+        <div class="box"><span>7</span></div>
+        <div class="box"><span>8</span></div>
+        <div class="box"><span>9</span></div>
+        <div class="box"><span>10</span></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Form</title>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh; /* Full height screen */
+    }
+
+    .login-box {
+      width: 50%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .login-box form {
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .des-con{
+      height: 100vh;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+   
+
+    input[type="submit"] {
+      background-color: #00796B;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    
+   
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <div class="login-box">
+    <form>
+        <label for="username">UserName:</label>
+        <input type="text" id="usename" name="username" required><br/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br/>
+        
+       <input type="submit" value="Login">
+
+
+    </form>
+</div>
+
+<div class="des">
+
+    <div class="des-con">
+    <h1>Welcome to login</h1>
+    <h2>If you are not registered your account please register ur accout first!!</h2>
+</div>
+</div>
+</div>
+</body>
+</html>

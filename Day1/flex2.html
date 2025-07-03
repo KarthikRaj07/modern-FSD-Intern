@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Line</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Width Left-Aligned Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 25vh); 
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .cell {
+      background-color: yellow;
+    }
+
+    .row-1 {
+      border: none;
+    }
+
+    .row-2, .row-3 {
+      border: 3px solid #8B0000;
+    }
+
+    .merge-top {
+      border-left: 3px solid #8B0000;
+      border-right: 3px solid #8B0000;
+      border-top: 3px solid #8B0000;
+      border-bottom: none;
+    }
+
+    .merge-bottom {
+      border-left: 3px solid #8B0000;
+      border-right: 3px solid #8B0000;
+      border-bottom: 3px solid #8B0000;
+      border-top: none;
+    }
+
+    .yellow-only {
+      background-color: yellow;
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+      border: 3px solid #8B0000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    
+    <div class="cell row-1"></div>
+    <div class="cell row-1"></div>
+    <div class="cell row-1"></div>
+    <div class="cell row-1"></div>
+
+   
+    <div class="cell merge-top"></div>
+    <div class="cell row-2"></div>
+    <div class="cell row-2"></div>
+    <div class="cell row-2"></div>
+
+    
+    <div class="cell merge-bottom"></div>
+    <div class="cell row-3"></div>
+    <div class="cell row-3"></div>
+    <div class="cell row-3"></div>
+
+    
+    <div class="yellow-only"></div>
+    
+  </div>
+
+</body>
+</html>
+\
