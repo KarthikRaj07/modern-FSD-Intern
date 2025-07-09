@@ -44,10 +44,10 @@ const switchPlayer = function () {
 
 btnRoll.addEventListener('click', function () {
   if (playing) {
-    // 1. Generate random dice roll
+    
     const dice = Math.trunc(Math.random() * 6) + 1;
 
-    // 2. Display dice using switch-case
+    
     switch (dice) {
       case 1:
         diceEl.src = '1.jpg';
@@ -70,7 +70,7 @@ btnRoll.addEventListener('click', function () {
     }
     diceEl.classList.remove('hidden');
 
-    // 3. Check for rolled 1
+   
     if (dice !== 1) {
       currentScore += dice;
       document.getElementById(`current--${activePlayer}`).textContent = currentScore;
@@ -82,11 +82,11 @@ btnRoll.addEventListener('click', function () {
 
 btnHold.addEventListener('click', function () {
   if (playing) {
-    // 1. Add current score to total score
+    
     scores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
 
-    // 2. Check if player won
+    
     if (scores[activePlayer] >= 100) {
       playing = false;
       diceEl.classList.add('hidden');
