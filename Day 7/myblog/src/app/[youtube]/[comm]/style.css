@@ -1,0 +1,51 @@
+.comm-container {
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.channel-header {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.channel-header h2 {
+  margin-bottom: 5px;
+}
+
+.channel-header p {
+  margin-top: 0;
+  color: #555;
+}
+
+.channel-tabs {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.channel-tabs button {
+  background: white;
+  border: 1px solid grey;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.channel-posts {
+  margin-top: 20px;
+}
+
+.post {
+  background: skyblue;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.post small {
+  color: #888;
+}
